@@ -38,7 +38,6 @@ async function pickAndSetDefaultOrg() {
     if (!selected) {
         return undefined;
     }
-    ;
     try {
         // Set at project-level first, fallback to global if no project config found
         const config = await core_1.Config.create({ isGlobal: false });

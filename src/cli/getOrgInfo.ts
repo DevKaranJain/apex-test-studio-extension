@@ -41,7 +41,7 @@ async function pickAndSetDefaultOrg(): Promise<string | undefined> {
     matchOnDetail: true,
   });
 
-  if (!selected) {return undefined};
+  if (!selected) {return undefined;}
 
   try {
     // Set at project-level first, fallback to global if no project config found
